@@ -1,0 +1,167 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Counter59_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter4WithLoad/Counter4WithLoad.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# vcom -93 -work work {C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter59/Counter59.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59
+# -- Compiling architecture rtl of Counter59
+# 
+do "C:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\Counter59\simulate.do"
+# Cannot open macro file: C:UsersMATHEUS.VPSReposPersonalReconfigurableLogicCounter59simulate.do
+
+do "C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter59/simulate.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59
+# -- Compiling architecture rtl of Counter59
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59_tb
+# -- Compiling architecture sim of Counter59_tb
+# vsim rtl_work.counter59_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.counter59_tb(sim)
+# Loading rtl_work.counter59(rtl)
+# Loading rtl_work.counter4withload(x)
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /counter59_tb/UUT
+
+run 10000ns
+do "C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter59/simulate.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59
+# -- Compiling architecture rtl of Counter59
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59_tb
+# -- Compiling architecture sim of Counter59_tb
+# vsim rtl_work.counter59_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.counter59_tb(sim)
+# Loading rtl_work.counter59(rtl)
+# Loading rtl_work.counter4withload(x)
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /counter59_tb/UUT
+do "C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter59/simulate.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59
+# -- Compiling architecture rtl of Counter59
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59_tb
+# -- Compiling architecture sim of Counter59_tb
+# vsim rtl_work.counter59_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.counter59_tb(sim)
+# Loading rtl_work.counter59(rtl)
+# Loading rtl_work.counter4withload(x)
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /counter59_tb/UUT
+run 10000ns
+# WARNING: No extended dataflow license exists
+do "C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/Counter59/simulate.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59
+# -- Compiling architecture rtl of Counter59
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter59_tb
+# -- Compiling architecture sim of Counter59_tb
+# vsim rtl_work.counter59_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.counter59_tb(sim)
+# Loading rtl_work.counter59(rtl)
+# Loading rtl_work.counter4withload(x)
+run 10000ns
