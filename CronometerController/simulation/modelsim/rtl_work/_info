@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\CronometerController\simulation\modelsim
+Ecronometercontroller
+Z1 w1757797455
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\CronometerController\simulation\modelsim
+Z6 8C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController.vhd
+Z7 FC:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController.vhd
+l0
+L5
+VbokUBkNAD0>_KFg3^hnM]0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1757797630.830000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController.vhd|
+Z11 !s107 C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 7[W5IeGK^49Yj>G8@i=I`1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 20 cronometercontroller 0 22 bokUBkNAD0>_KFg3^hnM]0
+l21
+L14
+V3IE?BBoUa;z3HIeZ`>S[^0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 W>IDc_VLnK?2fkB2oT_4k1
+!i10b 1
+Ecronometercontroller_tb
+Z14 w1757797505
+R2
+R3
+R4
+R5
+Z15 8C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController_tb.vhd
+Z16 FC:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController_tb.vhd
+l0
+L5
+V<gF85cA0IEd`LCA<MR_6`3
+!s100 g5FK3Noi]LE^aKPSzaY3J3
+R8
+32
+!i10b 1
+Z17 !s108 1757797630.967000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController_tb.vhd|
+Z19 !s107 C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/CronometerController/CronometerController_tb.vhd|
+Z20 o-work work -O0
+R13
+Atestbench
+R2
+R3
+R4
+DEx4 work 23 cronometercontroller_tb 0 22 <gF85cA0IEd`LCA<MR_6`3
+l26
+L8
+V3c?j`7YO_M4nc=6SLSRm?2
+!s100 8LH;R_8ZVc_]6cJMd?USV3
+R8
+32
+!i10b 1
+R17
+R18
+R19
+R20
+R13
