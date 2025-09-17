@@ -16,7 +16,7 @@ end entity;
 
 architecture rtl of Counter99 is
 
-    component Counter4WithLoad is
+    component CountTo9 is
         port(
             RST  : in  std_logic;
             CLK  : in  std_logic;
@@ -39,7 +39,7 @@ architecture rtl of Counter99 is
 begin
 
     -- Contador das unidades (0–9)
-    units_counter : Counter4WithLoad
+    units_counter : CountTo9
         port map(
             RST  => RST,
             CLK  => CLK,
@@ -51,7 +51,7 @@ begin
         );
 
     -- Contador das dezenas (0–9)
-    tens_counter : Counter4WithLoad
+    tens_counter : Countto9
         port map(
             RST  => RST,
             CLK  => CLK,
