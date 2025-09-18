@@ -16,7 +16,7 @@ end entity;
 
 architecture rtl of Counter59 is
 
-    component Counter4WithLoad is
+    component CountTo9 is
         port(
             RST  : in  std_logic;
             CLK  : in  std_logic;
@@ -39,7 +39,7 @@ architecture rtl of Counter59 is
 begin
 
     -- Contador das unidades (0–9)
-    units_counter : Counter4WithLoad
+    units_counter : CountTo9
         port map(
             RST  => RST,
             CLK  => CLK,
@@ -50,8 +50,8 @@ begin
             Q    => units_cnt
         );
 
-    -- Contador das dezenas (0–5)
-    tens_counter : Counter4WithLoad
+    -- Contador das dezenas (0–9)
+    tens_counter : CountTo9
         port map(
             RST  => RST,
             CLK  => CLK,
@@ -67,12 +67,13 @@ begin
     Q <= full_count;
 
     -- enable do contador das dezenas (vai-um)
-    en_tens <= '1' when (units_cnt = "1111" and EN = '1') else '0';
-
-    -- clear interno (zera quando >= 59 ou CLR externo ativo)
-    clr_int <= '1' when (unsigned(full_count) > 59) or (CLR = '1') else '0';
+    en_tens <= '1' when (units_cnt = "1001" and EN = '1') else '0';
+	 
+	 -- clear interno (zera quando >= 59 ou CLR externo ativo)
+    clr_int <= '1' when (tens_cnt = "0110") or (CLR = '1') else '0';
 
     -- buffer de LOAD
     load_buf <= LOAD;
 
 end architecture;
+
