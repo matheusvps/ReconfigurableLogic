@@ -1,0 +1,116 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\joaop\OneDrive\햞ea de Trabalho\Code\VHDL\ReconfigLogic\ReconfigurableLogic\Cronometer\simulation\modelsim
+Ebcd4bits
+Z1 w1757865244
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\joaop\OneDrive\햞ea de Trabalho\Code\VHDL\ReconfigLogic\ReconfigurableLogic\Cronometer\simulation\modelsim
+Z6 8C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits.vhd
+Z7 FC:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits.vhd
+l0
+L5
+Vb3lao79@=Uh9NOS=QB1HL3
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1757865311.753000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits.vhd|
+Z11 !s107 C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+!s100 7?knHUZ33O8cB?OF_l>_l1
+!i10b 1
+Aa_bcd4bits
+R2
+R3
+R4
+DEx4 work 8 bcd4bits 0 22 b3lao79@=Uh9NOS=QB1HL3
+l24
+L19
+Vloj=el<^M1M;7NCj`4j`21
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 RCDz4d>Kl[2zd13:lTCS41
+!i10b 1
+Ebcd4bits_tb
+Z14 w1757514048
+R2
+R3
+R4
+R5
+Z15 8C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits_tb.vhd
+Z16 FC:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits_tb.vhd
+l0
+L5
+Vh[7cgg4]^7bQnbWW>hES>0
+!s100 9z6DNM>8GL?3XlnZmQD?=1
+R8
+32
+!i10b 1
+Z17 !s108 1757865313.802000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits_tb.vhd|
+Z19 !s107 C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits_tb.vhd|
+R12
+R13
+Atest
+R2
+R3
+R4
+DEx4 work 11 bcd4bits_tb 0 22 h[7cgg4]^7bQnbWW>hES>0
+l33
+L8
+VG;:2WlKO?4DhK9SA86h[F1
+!s100 iI3g[@7TDV[I6JiGS1<SY1
+R8
+32
+!i10b 1
+R17
+R18
+R19
+R12
+R13
+Ecronometer
+Z20 w1757510854
+R2
+R3
+R4
+R5
+Z21 8C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/Cronometer.vhd
+Z22 FC:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/Cronometer.vhd
+l0
+L5
+V?Vmf=89[9fOLD2ni_EG^B3
+R8
+31
+Z23 !s108 1757865300.161000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/Cronometer.vhd|
+Z25 !s107 C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/Cronometer.vhd|
+Z26 o-93 -work work -O0
+R13
+!s100 :U66Q[BFSNa1WXWU^SRG>2
+!i10b 1
+Aa_cronometer
+R2
+R3
+R4
+DEx4 work 10 cronometer 0 22 ?Vmf=89[9fOLD2ni_EG^B3
+l15
+L14
+VdB4f1?_b3?aF5BK^zW1l:0
+R8
+31
+R23
+R24
+R25
+R26
+R13
+!s100 2bm641O9YJABn4JW;5=Q40
+!i10b 1

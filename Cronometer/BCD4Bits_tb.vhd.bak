@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity BCD4Bits_tb is
+end entity;
+
+Architecture test of BCD4Bits_tb is
+
+	component BCD4Bits is 
+	
+	port(
+		NumIn  : in unsigned(3 downto 0);
+	
+		outA   : out std_logic;
+		outB   : out std_logic;
+		outC   : out std_logic;
+		outD   : out std_logic;
+		outE   : out std_logic;
+		outF   : out std_logic;
+		outG   : out std_logic);
+	end component;
+	
+	-- Signal Definitions
+	
+	signal NumIn_s : unsigned(3 downto 0) := "0000";
+	signal outA_s, outB_s, outC_s, outD_s, outE_s, outF_s, outG_s : std_logic := '0';
+	
+	

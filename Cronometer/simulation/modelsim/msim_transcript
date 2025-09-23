@@ -1,0 +1,54 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Cronometer_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/joaop/OneDrive/Área de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/Cronometer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Cronometer
+# -- Compiling architecture a_Cronometer of Cronometer
+# 
+vcom -reportprogress 300 -work work {C:/Users/joaop/OneDrive/Área de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BCD4Bits
+# -- Compiling architecture A_BCD4Bits of BCD4Bits
+vcom -reportprogress 300 -work work {C:/Users/joaop/OneDrive/Área de Trabalho/Code/VHDL/ReconfigLogic/ReconfigurableLogic/Cronometer/BCD4Bits_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BCD4Bits_tb
+# -- Compiling architecture test of BCD4Bits_tb
+vsim work.bcd4bits_tb
+# vsim work.bcd4bits_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bcd4bits_tb(test)
+# Loading work.bcd4bits(a_bcd4bits)
+add wave -position end  sim:/bcd4bits_tb/NumIn_s
+add wave -position end  sim:/bcd4bits_tb/outA_s
+add wave -position end  sim:/bcd4bits_tb/outB_s
+add wave -position end  sim:/bcd4bits_tb/outC_s
+add wave -position end  sim:/bcd4bits_tb/outD_s
+add wave -position end  sim:/bcd4bits_tb/outE_s
+add wave -position end  sim:/bcd4bits_tb/outF_s
+add wave -position end  sim:/bcd4bits_tb/outG_s
+run 1000 ns
