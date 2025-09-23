@@ -1,0 +1,305 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Counter57_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Counter57_6_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Counter57
+# -- Compiling architecture structure of Counter57
+# 
+# do "C:/Users/MATHEUS.VPS/Documents/Counter57/Lab2_GATE.do"
+# Limpa biblioteca gate_work se existir
+# if {[file exists "C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/gate_work"]} {
+#     vdel -lib "C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/gate_work" -all
+# }
+# 
+# Cria e mapeia a biblioteca gate_work
+# vlib "C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/gate_work"
+# vmap work "C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/gate_work"
+# Modifying modelsim.ini
+# 
+# Compila arquivos VHDL
+# vcom -93 -work work "C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_slow.vho"
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Counter57
+# -- Compiling architecture structure of Counter57
+# vcom -reportprogress 300 -work work "C:/Users/MATHEUS.VPS/Documents/Counter4WithLoad/Counter4WithLoad.vhd"
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# vcom -reportprogress 300 -work work "C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd"
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter57_TB
+# -- Compiling architecture arch of Counter57_TB
+# 
+# Simulação com SDF back-annotation
+# vsim -t 1ps +transport_int_delays +transport_path_delays \
+#     -sdftyp /uut=C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo \
+#     -L altera -L work -voptargs="+acc" Counter57_TB
+# vsim +transport_int_delays +transport_path_delays -L altera -L work -voptargs=\"+acc\" -sdftyp /uut=C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo -t 1ps Counter57_TB 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter57_tb(arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.counter57(structure)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# Loading timing data from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter57_tb File: C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd
+# 
+# Adiciona sinais à Wave (um por linha para evitar problemas)
+# add wave sim:/Counter57_TB/clk_tb
+# add wave sim:/Counter57_TB/rst_tb
+# add wave sim:/Counter57_TB/q_tb
+# add wave sim:/Counter57_TB/en_tb
+# add wave sim:/Counter57_TB/clr_tb
+# add wave sim:/Counter57_TB/ld_tb
+# add wave sim:/Counter57_TB/dload_tb -radix unsigned -position end
+# ** Error: Missing signal name or pattern.
+# Error in macro C:\Users\MATHEUS.VPS\Documents\Counter57\Lab2_GATE.do line 27
+# Missing signal name or pattern.
+#     while executing
+# "add wave sim:/Counter57_TB/dload_tb -radix unsigned -position end"
+do "C:/Users/MATHEUS.VPS/Documents/Counter57/Lab2_GATE.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Counter57
+# -- Compiling architecture structure of Counter57
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter57_TB
+# -- Compiling architecture arch of Counter57_TB
+# vsim +transport_int_delays +transport_path_delays -L altera -L work -voptargs=\"+acc\" -sdftyp /uut=C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo -t 1ps Counter57_TB 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter57_tb(arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.counter57(structure)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# Loading timing data from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter57_tb File: C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd
+# ** Error: Missing signal name or pattern.
+# Error in macro C:\Users\MATHEUS.VPS\Documents\Counter57\Lab2_GATE.do line 27
+# Missing signal name or pattern.
+#     while executing
+# "add wave sim:/Counter57_TB/dload_tb -radix unsigned -position end"
+
+do "C:/Users/MATHEUS.VPS/Documents/Counter57/Lab2_GATE.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Counter57
+# -- Compiling architecture structure of Counter57
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter57_TB
+# -- Compiling architecture arch of Counter57_TB
+# vsim +transport_int_delays +transport_path_delays -L altera -L work -voptargs=\"+acc\" -sdftyp /uut=C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo -t 1ps Counter57_TB 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter57_tb(arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.counter57(structure)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# Loading timing data from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter57_tb File: C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd
+# ** Error: (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# Missing signal name or pattern.
+# Error in macro C:\Users\MATHEUS.VPS\Documents\Counter57\Lab2_GATE.do line 27
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# (vish-4014) No objects found matching 'add'.
+# (vish-4014) No objects found matching 'wave'.
+# Missing signal name or pattern.
+#     while executing
+# "add wave sim:/Counter57_TB/clk_tb \
+# add wave sim:/Counter57_TB/rst_tb \
+# add wave sim:/Counter57_TB/q_tb \
+# add wave sim:/Counter57_TB/en_tb \
+# add wave ..."
+do "C:/Users/MATHEUS.VPS/Documents/Counter57/Lab2_GATE.do"
+# Modifying modelsim.ini
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Counter57
+# -- Compiling architecture structure of Counter57
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter4WithLoad
+# -- Compiling architecture X of Counter4WithLoad
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter57_TB
+# -- Compiling architecture arch of Counter57_TB
+# vsim +transport_int_delays +transport_path_delays -L altera -L work -voptargs=\"+acc\" -sdftyp /uut=C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo -t 1ps Counter57_TB 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.counter57_tb(arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.counter57(structure)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# Loading timing data from C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_vhd_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /counter57_tb File: C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd

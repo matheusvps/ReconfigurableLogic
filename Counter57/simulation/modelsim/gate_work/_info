@@ -1,0 +1,126 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MATHEUS.VPS\Documents\Counter57\simulation\modelsim
+Ecounter4withload
+Z1 w1757381352
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\MATHEUS.VPS\Documents\Counter57\simulation\modelsim
+Z6 8C:/Users/MATHEUS.VPS/Documents/Counter4WithLoad/Counter4WithLoad.vhd
+Z7 FC:/Users/MATHEUS.VPS/Documents/Counter4WithLoad/Counter4WithLoad.vhd
+l0
+L5
+VCm[m2NZmOigTNHV`nA`VR1
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1757386007.818000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/MATHEUS.VPS/Documents/Counter4WithLoad/Counter4WithLoad.vhd|
+Z11 !s107 C:/Users/MATHEUS.VPS/Documents/Counter4WithLoad/Counter4WithLoad.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+!s100 iBd>n]dGMPk:?]W;mMDcJ2
+!i10b 1
+Ax
+R2
+R3
+R4
+DEx4 work 16 counter4withload 0 22 Cm[m2NZmOigTNHV`nA`VR1
+l16
+L14
+VzijlC[DNcC=TL3>mBDYza1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 b@L79_FN_YE]cTASn?FP;2
+!i10b 1
+Ecounter57
+Z14 w1757384851
+Z15 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z16 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z17 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z18 DPx6 altera 11 dffeas_pack 0 22 Giz7C_dB_=WZS^1=3P8073
+Z19 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+R3
+R4
+Z20 DPx6 altera 28 altera_primitives_components 0 22 W]_:GkoiISnEn83KNb:3:2
+R5
+Z21 8C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_slow.vho
+Z22 FC:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_slow.vho
+l0
+L36
+VeAjkPV5?gWLgFDo`^ad082
+R8
+31
+Z23 !s108 1757386007.606000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_slow.vho|
+Z25 !s107 C:/Users/MATHEUS.VPS/Documents/Counter57/simulation/modelsim/Counter57_6_1200mv_85c_slow.vho|
+Z26 o-93 -work work -O0
+R13
+!s100 DJ6>>0YNQRX0<HAC?XZb82
+!i10b 1
+Astructure
+R15
+R16
+R17
+R18
+R19
+R3
+R4
+R20
+DEx4 work 9 counter57 0 22 eAjkPV5?gWLgFDo`^ad082
+l157
+L72
+V5>iP:RcL0C5hUCCW34fNI3
+R8
+31
+R23
+R24
+R25
+R26
+R13
+!s100 e3X>h7TlTA3H[L9JLe=jh0
+!i10b 1
+Ecounter57_tb
+Z27 w1757385734
+R2
+R3
+R4
+R5
+Z28 8C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd
+Z29 FC:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd
+l0
+L5
+VF@fF6l8?;OH?zJaoj4VY21
+!s100 LGC2=3G062?^6PAEWY3;50
+R8
+32
+!i10b 1
+Z30 !s108 1757386007.992000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd|
+Z32 !s107 C:/Users/MATHEUS.VPS/Documents/Counter57/Counter57_TB.vhd|
+R12
+R13
+Aarch
+R2
+R3
+R4
+DEx4 work 12 counter57_tb 0 22 F@fF6l8?;OH?zJaoj4VY21
+l34
+L8
+VRoTCM7V1JkXo3XE10Qc<73
+!s100 BEVb8<dj=DoeUen?CP_EX0
+R8
+32
+!i10b 1
+R30
+R31
+R32
+R12
+R13

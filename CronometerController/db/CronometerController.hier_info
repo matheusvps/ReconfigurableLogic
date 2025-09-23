@@ -1,0 +1,11 @@
+|CronometerController
+btn_clear => process_0.IN1
+btn_pause => process_0.IN1
+btn_pause => process_0.IN1
+btn_reset => internal_state[0].OUTPUTSELECT
+btn_reset => internal_state[1].IN1
+btn_reset => internal_state[1].OUTPUTSELECT
+current_state[0] <= internal_state[0].DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] <= internal_state[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

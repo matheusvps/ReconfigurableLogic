@@ -1,0 +1,90 @@
+|Counter99
+RST => Counter4WithLoad:units_counter.RST
+RST => Counter4WithLoad:tens_counter.RST
+CLK => Counter4WithLoad:units_counter.CLK
+CLK => Counter4WithLoad:tens_counter.CLK
+EN => en_tens.IN1
+EN => Counter4WithLoad:units_counter.EN
+CLR => clr_int.IN1
+LD => Counter4WithLoad:units_counter.LD
+LD => Counter4WithLoad:tens_counter.LD
+LOAD[0] => Counter4WithLoad:units_counter.LOAD[0]
+LOAD[1] => Counter4WithLoad:units_counter.LOAD[1]
+LOAD[2] => Counter4WithLoad:units_counter.LOAD[2]
+LOAD[3] => Counter4WithLoad:units_counter.LOAD[3]
+LOAD[4] => Counter4WithLoad:tens_counter.LOAD[0]
+LOAD[5] => Counter4WithLoad:tens_counter.LOAD[1]
+LOAD[6] => Counter4WithLoad:tens_counter.LOAD[2]
+LOAD[7] => Counter4WithLoad:tens_counter.LOAD[3]
+Q[0] <= Counter4WithLoad:units_counter.Q[0]
+Q[1] <= Counter4WithLoad:units_counter.Q[1]
+Q[2] <= Counter4WithLoad:units_counter.Q[2]
+Q[3] <= Counter4WithLoad:units_counter.Q[3]
+Q[4] <= Counter4WithLoad:tens_counter.Q[0]
+Q[5] <= Counter4WithLoad:tens_counter.Q[1]
+Q[6] <= Counter4WithLoad:tens_counter.Q[2]
+Q[7] <= Counter4WithLoad:tens_counter.Q[3]
+
+
+|Counter99|Counter4WithLoad:units_counter
+RST => CONT[0].ACLR
+RST => CONT[1].ACLR
+RST => CONT[2].ACLR
+RST => CONT[3].ACLR
+CLK => CONT[0].CLK
+CLK => CONT[1].CLK
+CLK => CONT[2].CLK
+CLK => CONT[3].CLK
+Q[0] <= CONT[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= CONT[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= CONT[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= CONT[3].DB_MAX_OUTPUT_PORT_TYPE
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LOAD[0] => CONT.DATAB
+LOAD[1] => CONT.DATAB
+LOAD[2] => CONT.DATAB
+LOAD[3] => CONT.DATAB
+
+
+|Counter99|Counter4WithLoad:tens_counter
+RST => CONT[0].ACLR
+RST => CONT[1].ACLR
+RST => CONT[2].ACLR
+RST => CONT[3].ACLR
+CLK => CONT[0].CLK
+CLK => CONT[1].CLK
+CLK => CONT[2].CLK
+CLK => CONT[3].CLK
+Q[0] <= CONT[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= CONT[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= CONT[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= CONT[3].DB_MAX_OUTPUT_PORT_TYPE
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+EN => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+CLR => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LD => CONT.OUTPUTSELECT
+LOAD[0] => CONT.DATAB
+LOAD[1] => CONT.DATAB
+LOAD[2] => CONT.DATAB
+LOAD[3] => CONT.DATAB
+
+
