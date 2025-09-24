@@ -22,7 +22,7 @@ architecture A_Totalizadores_tb of Totalizadores_tb is
 	signal inputWord_tb : unsigned(3 downto 0) := (others => '0');
 	signal clk_tb       : std_logic := '0';
 	signal for_tb, while_tb, if_tb, case_tb, sum_tb : unsigned(2 downto 0);
-	constant period_time : time := 100 ns;
+	constant period_time : time := 10 ns;
 	signal finished : std_logic := '0';
 
 	-- função local para popcount esperado
@@ -64,7 +64,10 @@ begin
 		procedure drive_and_check(v : unsigned(3 downto 0)) is
 			variable expected : unsigned(2 downto 0);
 		begin
+			-- aplica estímulo logo após a borda de descida, garantindo setup
+			wait until falling_edge(clk_tb);
 			inputWord_tb <= v;
+			wait for period_time/10; -- pequena margem
 			wait until rising_edge(clk_tb);
 			expected := popcount4(v);
 			assert for_tb = expected report "FOR mismatch" severity error;
