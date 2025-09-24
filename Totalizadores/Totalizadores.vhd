@@ -22,6 +22,16 @@ Architecture A_Totalizadores of Totalizadores is
 
 	signal b0, b1, b2, b3 : unsigned(2 downto 0);
 
+	-- conversão direta de um bit para unsigned(2 downto 0)
+	function bit_to_u3(b : std_logic) return unsigned is
+		variable r : unsigned(2 downto 0) := (others => '0');
+	begin
+		if b = '1' then
+			r := r + 1;
+		end if;
+		return r;
+	end function;
+
 begin
 
 	-- sinais auxiliares (CASE/WHEN) para cada bit
@@ -89,10 +99,10 @@ begin
 			signalsCaseWhenOut <= b0 + b1 + b2 + b3;
 
 			-- b.5) SIGNALS (soma direta com conversão direta dos bits de entrada)
-			signalsDirectSumOut <= unsigned("00" & inputWord(0)) +
-							     unsigned("00" & inputWord(1)) +
-							     unsigned("00" & inputWord(2)) +
-							     unsigned("00" & inputWord(3));
+			signalsDirectSumOut <= bit_to_u3(inputWord(0)) +
+							     bit_to_u3(inputWord(1)) +
+							     bit_to_u3(inputWord(2)) +
+							     bit_to_u3(inputWord(3));
 		end if;
 	end process;
 
