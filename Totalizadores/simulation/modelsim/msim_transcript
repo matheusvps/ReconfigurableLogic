@@ -1,0 +1,58 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Totalizadores_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/Totalizadores/Totalizadores.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Totalizadores
+# -- Compiling architecture A_Totalizadores of Totalizadores
+# 
+vcom -reportprogress 300 -work work {C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/Totalizadores/SlowTotalizer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SlowTotalizer
+# -- Compiling architecture A_SlowTotalizer of slowTotalizer
+vcom -reportprogress 300 -work work {C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/Totalizadores/SlowTotalizer_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SlowTotalizer_tb
+# -- Compiling architecture A_SlowTotalizer_tb of SlowTotalizer_tb
+vcom -reportprogress 300 -work work {C:/Users/joaop/OneDrive/햞ea de Trabalho/Code/VHDL/ReconfigLogic/Totalizadores/Totalizadores.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Totalizadores
+# -- Compiling architecture A_Totalizadores of Totalizadores
+vsim work.slowtotalizer_tb
+# vsim work.slowtotalizer_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.slowtotalizer_tb(a_slowtotalizer_tb)
+# Loading work.slowtotalizer(a_slowtotalizer)
+add wave -position end  sim:/slowtotalizer_tb/input_tb
+add wave -position end  sim:/slowtotalizer_tb/count_tb
+add wave -position end  sim:/slowtotalizer_tb/clk_tb
+add wave -position end  sim:/slowtotalizer_tb/finished
+run 100 ms

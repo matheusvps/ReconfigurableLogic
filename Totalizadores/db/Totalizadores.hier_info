@@ -1,0 +1,23 @@
+|Totalizadores
+inputWord[0] => ~NO_FANOUT~
+inputWord[1] => ~NO_FANOUT~
+inputWord[2] => ~NO_FANOUT~
+inputWord[3] => ~NO_FANOUT~
+clk => ~NO_FANOUT~
+variablesForOut[0] <= variablesForOut[0].DB_MAX_OUTPUT_PORT_TYPE
+variablesForOut[1] <= variablesForOut[1].DB_MAX_OUTPUT_PORT_TYPE
+variablesForOut[2] <= variablesForOut[2].DB_MAX_OUTPUT_PORT_TYPE
+variablesWhileOut[0] <= variablesWhileOut[0].DB_MAX_OUTPUT_PORT_TYPE
+variablesWhileOut[1] <= variablesWhileOut[1].DB_MAX_OUTPUT_PORT_TYPE
+variablesWhileOut[2] <= variablesWhileOut[2].DB_MAX_OUTPUT_PORT_TYPE
+variablesIfThen[0] <= variablesIfThen[0].DB_MAX_OUTPUT_PORT_TYPE
+variablesIfThen[1] <= variablesIfThen[1].DB_MAX_OUTPUT_PORT_TYPE
+variablesIfThen[2] <= variablesIfThen[2].DB_MAX_OUTPUT_PORT_TYPE
+signalsCaseWhenOut[0] <= signalsCaseWhenOut[0].DB_MAX_OUTPUT_PORT_TYPE
+signalsCaseWhenOut[1] <= signalsCaseWhenOut[1].DB_MAX_OUTPUT_PORT_TYPE
+signalsCaseWhenOut[2] <= signalsCaseWhenOut[2].DB_MAX_OUTPUT_PORT_TYPE
+signalsDirectSumOut[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+signalsDirectSumOut[1] <= signalsDirectSumOut[1].DB_MAX_OUTPUT_PORT_TYPE
+signalsDirectSumOut[2] <= signalsDirectSumOut[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
