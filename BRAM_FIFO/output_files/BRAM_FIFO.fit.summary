@@ -1,0 +1,16 @@
+Fitter Status : Failed - Sat Oct 04 07:33:31 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : BRAM_FIFO
+Top-level Entity Name : BRAM_FIFO
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 73,655 / 22,320 ( 330 % )
+    Total combinational functions : 32,718 / 22,320 ( 147 % )
+    Dedicated logic registers : 41,055 / 22,320 ( 184 % )
+Total registers : 41055
+Total pins : 55 / 154 ( 36 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,13 @@
+
+State Machine - |BRAM_FIFO|read_controller:READ_CTRL|current_state
+Name current_state.RD_WAIT current_state.RD_FIFO current_state.RESET 
+current_state.RESET 0 0 0 
+current_state.RD_FIFO 0 1 1 
+current_state.RD_WAIT 1 0 1 
+
+State Machine - |BRAM_FIFO|write_controller:WRITE_CTRL|current_state
+Name current_state.WR_WAIT current_state.WR_FIFO current_state.LOAD_BRAM current_state.RESET 
+current_state.RESET 0 0 0 0 
+current_state.LOAD_BRAM 0 0 1 1 
+current_state.WR_FIFO 0 1 0 1 
+current_state.WR_WAIT 1 0 0 1 
