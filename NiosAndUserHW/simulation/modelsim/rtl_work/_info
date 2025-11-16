@@ -1,0 +1,78 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW\simulation\modelsim
+Ebram1024x32
+Z1 w1761004410
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW\simulation\modelsim
+Z5 8C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/BRAM1024/bram1024x32.vhd
+Z6 FC:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/BRAM1024/bram1024x32.vhd
+l0
+L42
+VRN>7C=n`:eK9ghAD52z:F1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1761010938.810000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/BRAM1024/bram1024x32.vhd|
+Z10 !s107 C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/BRAM1024/bram1024x32.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 NbiJZ_eIN<JIe[c2NNfKS2
+!i10b 1
+Asyn
+R2
+R3
+Z13 DEx4 work 11 bram1024x32 0 22 RN>7C=n`:eK9ghAD52z:F1
+l85
+L54
+ViM=2`BAh2>cVKzgfZHJcH2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 M]4zb1mbIiI2>LmNVFXRF3
+!i10b 1
+Eniosanduserhw
+Z14 w1761007981
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z16 8C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/NiosAndUserHW.vhd
+Z17 FC:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/NiosAndUserHW.vhd
+l0
+L5
+VigmMzi@VDYTdYSN@]hSig1
+!s100 UlRLoXNLMMJG0<`zEiTSP2
+R7
+31
+!i10b 1
+Z18 !s108 1761010939.017000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/NiosAndUserHW.vhd|
+Z20 !s107 C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/NiosAndUserHW.vhd|
+R11
+R12
+Artl
+R13
+R15
+R2
+R3
+DEx4 work 13 niosanduserhw 0 22 igmMzi@VDYTdYSN@]hSig1
+l39
+L19
+VFNk6cJf1K9mSL<nZjS:i12
+!s100 bkg4F:k?Mh8iHz2SN;cY_0
+R7
+31
+!i10b 1
+R18
+R19
+R20
+R11
+R12

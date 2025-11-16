@@ -1,0 +1,241 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do NiosAndUserHW_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/BRAM1024/bram1024x32.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bram1024x32
+# -- Compiling architecture SYN of bram1024x32
+# vcom -93 -work work {C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/NiosAndUserHW.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NiosAndUserHW
+# -- Compiling architecture rtl of NiosAndUserHW
+# -- Loading entity bram1024x32
+# 
+ls
+# NiosAndUserHW_run_msim_rtl_vhdl.do  modelsim.ini  msim_transcript  rtl_work                                  
+cd /d "C:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW"
+# wrong # args: should be "cd ?dirName?"
+cd /d C:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW
+# wrong # args: should be "cd ?dirName?"
+cd C:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW
+# couldn't change working directory to "C:UsersMATHEUS.VPSReposPersonalReconfigurableLogicNiosAndUserHW": no such file or directory
+cd Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW
+# couldn't change working directory to "UsersMATHEUS.VPSReposPersonalReconfigurableLogicNiosAndUserHW": no such file or directory
+cd Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHWc
+# couldn't change working directory to "UsersMATHEUS.VPSReposPersonalReconfigurableLogicNiosAndUserHWc": no such file or directory
+pwd
+# C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/simulation/modelsim
+cd ..
+# reading C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini
+pwd
+# C:/Users/MATHEUS.VPS/Repos/Personal/ReconfigurableLogic/NiosAndUserHW/simulation
+cd ..
+do simulate.do
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bram1024x32
+# -- Compiling architecture SYN of bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NiosAndUserHW
+# -- Compiling architecture rtl of NiosAndUserHW
+# -- Loading entity bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity NiosAndUserHW_tb
+# -- Compiling architecture testbench of NiosAndUserHW_tb
+# ** Error: NiosAndUserHW_tb.vhd(52): (vcom-1192) Array length is 36; aggregate length is 34.
+# 
+# ** Error: NiosAndUserHW_tb.vhd(337): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./simulate.do line 13
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work NiosAndUserHW_tb.vhd"
+do simulate.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bram1024x32
+# -- Compiling architecture SYN of bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NiosAndUserHW
+# -- Compiling architecture rtl of NiosAndUserHW
+# -- Loading entity bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity NiosAndUserHW_tb
+# -- Compiling architecture testbench of NiosAndUserHW_tb
+# vsim -t ps work.niosanduserhw_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.niosanduserhw_tb(testbench)
+# Loading work.niosanduserhw(rtl)
+# Loading work.bram1024x32(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# ** Note: Iniciando fase de escrita - 1024 escritas
+#    Time: 60 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# Escritas completadas: 0
+# ** Fatal: (vsim-3734) Index value 10 is out of range 0 to 9.
+#    Time: 3610 ns  Iteration: 0  Process: /niosanduserhw_tb/test_proc File: NiosAndUserHW_tb.vhd
+# Fatal error in Process test_proc at NiosAndUserHW_tb.vhd line 128
+# 
+# HDL call sequence:
+# Stopped at NiosAndUserHW_tb.vhd 128 Process test_proc
+# 
+# 0 ps
+# 3790500 ps
+do simulate.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bram1024x32
+# -- Compiling architecture SYN of bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NiosAndUserHW
+# -- Compiling architecture rtl of NiosAndUserHW
+# -- Loading entity bram1024x32
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity NiosAndUserHW_tb
+# -- Compiling architecture testbench of NiosAndUserHW_tb
+# vsim -t ps work.niosanduserhw_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.niosanduserhw_tb(testbench)
+# Loading work.niosanduserhw(rtl)
+# Loading work.bram1024x32(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# ** Note: Iniciando fase de escrita - 1024 escritas
+#    Time: 60 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# Escritas completadas: 0
+# Escritas completadas: 100
+# Escritas completadas: 200
+# Escritas completadas: 300
+# Escritas completadas: 400
+# Escritas completadas: 500
+# Escritas completadas: 600
+# Escritas completadas: 700
+# Escritas completadas: 800
+# Escritas completadas: 900
+# Escritas completadas: 1000
+# ** Note: Fase de escrita concluída - 1024 escritas realizadas
+#    Time: 82060 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Iniciando fase de leitura - 1024 leituras
+#    Time: 82060 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Erro na leitura: esperado 77, obtido 67
+#    Time: 82120 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# Leituras completadas: 0
+# ATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICLeituras completadas: 100
+# IUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DLeituras completadas: 200
+# E SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA ++Leituras completadas: 300
+# +--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHELeituras completadas: 400
+# US VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS Leituras completadas: 500
+# PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SALeituras completadas: 600
+# NTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+Leituras completadas: 700
+# ++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VLeituras completadas: 800
+# INICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSLeituras completadas: 900
+# OS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANA +++--+++ 
+# MATHEUS VINICIUS PASSOS DE SANTANLeituras completadas: 1000
+# A +++--+++ 
+# ** Note: Fase de leitura concluída - 1024 leituras realizadas
+#    Time: 164060 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Testando comportamento tri-state quando CS=0
+#    Time: 164060 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Tri-state funcionando corretamente quando CS=0
+#    Time: 164070 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Testando proteção de escrita quando CS=0
+#    Time: 164080 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Erro: Proteção de escrita não funcionando quando CS=0
+#    Time: 164190 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Teste concluído com sucesso!
+#    Time: 164200 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Note: Simulação finalizada
+#    Time: 164300 ns  Iteration: 0  Instance: /niosanduserhw_tb
+# ** Failure: Simulação finalizada com sucesso!
+#    Time: 164300 ns  Iteration: 0  Process: /niosanduserhw_tb/monitor_proc File: NiosAndUserHW_tb.vhd
+# Break in Process monitor_proc at NiosAndUserHW_tb.vhd line 336
+# Simulation Breakpoint: Break in Process monitor_proc at NiosAndUserHW_tb.vhd line 336
+# MACRO ./simulate.do PAUSED at line 59

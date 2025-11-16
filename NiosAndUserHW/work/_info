@@ -1,0 +1,117 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW
+Ebram1024x32
+Z1 w1761004410
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\MATHEUS.VPS\Repos\Personal\ReconfigurableLogic\NiosAndUserHW
+Z5 8../BRAM1024/bram1024x32.vhd
+Z6 F../BRAM1024/bram1024x32.vhd
+l0
+L42
+V0TL4zBc`7^f@HO`GDIlZ@3
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1761011270.230000
+Z9 !s90 -reportprogress|300|-work|work|../BRAM1024/bram1024x32.vhd|
+Z10 !s107 ../BRAM1024/bram1024x32.vhd|
+Z11 o-work work -O0
+Z12 tExplicit 1
+!s100 NbiJZ_eIN<JIe[c2NNfKS2
+!i10b 1
+Asyn
+R2
+R3
+Z13 DEx4 work 11 bram1024x32 0 22 0TL4zBc`7^f@HO`GDIlZ@3
+l85
+L54
+VoM_jLU<IU>>j9bjQa3EVz2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 M]4zb1mbIiI2>LmNVFXRF3
+!i10b 1
+Eniosanduserhw
+Z14 w1761007981
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z16 8NiosAndUserHW.vhd
+Z17 FNiosAndUserHW.vhd
+l0
+L5
+V:mAz_kE1]DkZo::JgozCJ0
+R7
+32
+Z18 !s108 1761011270.383000
+Z19 !s90 -reportprogress|300|-work|work|NiosAndUserHW.vhd|
+Z20 !s107 NiosAndUserHW.vhd|
+R11
+R12
+!s100 UlRLoXNLMMJG0<`zEiTSP2
+!i10b 1
+Artl
+R13
+R15
+R2
+R3
+DEx4 work 13 niosanduserhw 0 22 :mAz_kE1]DkZo::JgozCJ0
+l39
+L19
+Vgi3GGTfS__ea[i`<;zgCW0
+!s100 bkg4F:k?Mh8iHz2SN;cY_0
+R7
+32
+R18
+R19
+R20
+R11
+R12
+!i10b 1
+Eniosanduserhw_tb
+Z21 w1761011261
+Z22 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R15
+R2
+R3
+R4
+Z23 8NiosAndUserHW_tb.vhd
+Z24 FNiosAndUserHW_tb.vhd
+l0
+L7
+V7Ikz=iZK[K`Y5JiQJ]g[[0
+!s100 XS3jf<fPVQSG:I5ecMZTQ1
+R7
+32
+!i10b 1
+Z25 !s108 1761011270.567000
+Z26 !s90 -reportprogress|300|-work|work|NiosAndUserHW_tb.vhd|
+Z27 !s107 NiosAndUserHW_tb.vhd|
+R11
+R12
+Atestbench
+R22
+R15
+R2
+R3
+Z28 DEx4 work 16 niosanduserhw_tb 0 22 7Ikz=iZK[K`Y5JiQJ]g[[0
+l69
+L10
+V8Bb^:1B58iC2H0n:0DZ^:0
+!s100 ^hWdP`Q=]zBRo[NK5NWK70
+R7
+32
+!i10b 1
+R25
+R26
+R27
+R11
+R12

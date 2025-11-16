@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity NIOSandUserHW is
+  port(
+    clk        : in  std_logic;
+    reset_n    : in  std_logic;
+
+    -- Avalon slave (32-bit wide bus typical)
+    avs_address    : in  std_logic_vector(1 downto 0); -- vamos mapear 0..3 offsets (00,01,10)
+    avs_write      : in  std_logic;
+    avs_read       : in  std_logic;
+    avs_writedata  : in  std_logic_vector(31 downto 0);
+    avs_readdata   : out std_logic_vector(31 downto 0);
+    avs_chipselect : in  std_logic
+  );
+end entity;
