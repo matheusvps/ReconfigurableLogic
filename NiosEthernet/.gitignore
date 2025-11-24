@@ -1,0 +1,12 @@
+*.elf
+*.map
+*.objdump
+*.d
+*.o
+/obj/
+*log*.txt
+*.log
+*.pdf
+.metadata/
+.history/
+*.rpt
