@@ -1,0 +1,19 @@
+!SESSION 2025-12-02 16:15:33.173 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-02 16:18:25.987
+!MESSAGE Indexed 'simple_socket' (9 sources, 41 headers) in 1,02 sec: 1.255 declarations; 2.049 references; 110 unresolved inclusions; 11 syntax errors; 443 unresolved names (11,82%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-02 16:18:58.299
+!MESSAGE Indexed 'simple_socket_bsp' (233 sources, 196 headers) in 6,59 sec: 10.844 declarations; 46.256 references; 26 unresolved inclusions; 196 syntax errors; 467 unresolved names (0,81%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-02 16:19:53.706
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1a82108 --id=0x0 --timestamp=1530840655]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-02 16:19:56.344
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1a82108 --id=0x0 --timestamp=1530840655 /cygdrive/c/Users/joaop/Downloads/FFTFpga-main/FFTFpga-main/DE2_NET/software/simple_socket/simple_socket.elf]
