@@ -13,7 +13,63 @@ class GUIApplication:
     def __init__(self, master):
         self.master = master
         self.master.title("FPGA FFT Test Server Control Panel")
-        self.master.geometry("1050x750")
+        self.master.geometry("1150x780")
+        self.master.minsize(1000, 650)
+        # Modern dark-ish background
+        self.master.configure(bg="#15171b")
+
+        # ttk theme configuration for a more modern look
+        self.style = ttk.Style()
+        # Use a platform‑independent base theme
+        try:
+            self.style.theme_use("clam")
+        except tk.TclError:
+            pass
+
+        base_bg = "#15171b"
+        panel_bg = "#1f2329"
+        accent = "#3b82f6"      # blue
+        accent_alt = "#22c55e"  # green
+        text_color = "#e5e7eb"
+
+        self.style.configure("TFrame", background=base_bg)
+        self.style.configure("Main.TFrame", background=base_bg)
+        self.style.configure("Panel.TLabelframe",
+                             background=panel_bg,
+                             foreground=text_color,
+                             labelanchor="nw")
+        self.style.configure("Panel.TLabelframe.Label",
+                             background=panel_bg,
+                             foreground=text_color,
+                             font=("Helvetica", 10, "bold"))
+        self.style.configure("TLabel",
+                             background=panel_bg,
+                             foreground=text_color)
+        self.style.configure("Main.TLabel",
+                             background=base_bg,
+                             foreground=text_color)
+        self.style.configure("TButton",
+                             padding=6,
+                             relief="flat")
+        self.style.map(
+            "TButton",
+            background=[("active", "#1d4ed8"), ("!disabled", accent)],
+            foreground=[("disabled", "#9ca3af"), ("!disabled", "#f9fafb")]
+        )
+        self.style.configure("Status.TLabel",
+                             background=panel_bg,
+                             font=("Helvetica", 10, "bold"))
+        self.style.configure("Value.TLabel",
+                             background=panel_bg,
+                             font=("Helvetica", 10))
+        self.style.configure("Header.TLabel",
+                             background=base_bg,
+                             foreground="#f9fafb",
+                             font=("Helvetica", 16, "bold"))
+        self.style.configure("SubHeader.TLabel",
+                             background=base_bg,
+                             foreground="#9ca3af",
+                             font=("Helvetica", 10))
         
         self.data_queue = queue.Queue()
         
@@ -32,12 +88,30 @@ class GUIApplication:
         self.update_status("Offline", "red")
 
     def _setup_ui(self):
+        # --- Top Header ---
+        header_frame = ttk.Frame(self.master, style="Main.TFrame", padding=(16, 14))
+        header_frame.pack(side=tk.TOP, fill=tk.X)
+
+        title_label = ttk.Label(
+            header_frame,
+            text="FPGA FFT Test Server",
+            style="Header.TLabel"
+        )
+        title_label.pack(side=tk.LEFT, anchor="w")
+
+        subtitle_label = ttk.Label(
+            header_frame,
+            text="Control panel for TCP streaming and signal visualization",
+            style="SubHeader.TLabel"
+        )
+        subtitle_label.pack(side=tk.LEFT, anchor="w", padx=(14, 0))
+
         # --- Main Control Frame ---
-        main_control_frame = ttk.Frame(self.master, padding="10")
+        main_control_frame = ttk.Frame(self.master, style="Main.TFrame", padding=(12, 6, 12, 8))
         main_control_frame.pack(side=tk.TOP, fill=tk.X)
         
         # --- Column 1 & 2: Server Control ---
-        server_frame = ttk.LabelFrame(main_control_frame, text="Server Control", padding="10")
+        server_frame = ttk.LabelFrame(main_control_frame, text="Server Control", padding="10", style="Panel.TLabelframe")
         server_frame.pack(side=tk.LEFT, fill=tk.Y, padx=(10, 5), anchor='n')
         
         config_frame = ttk.Frame(server_frame, padding=(0,0,10,0))
@@ -71,7 +145,7 @@ class GUIApplication:
         ttk.Radiobutton(source_frame, text="Audio File (.wav)", variable=self.source_mode, value="Audio File", command=self._toggle_source_controls).pack(anchor=tk.W)
 
         # --- Column 4: Source Settings ---
-        controls_frame = ttk.LabelFrame(main_control_frame, text="Source Settings", padding="10")
+        controls_frame = ttk.LabelFrame(main_control_frame, text="Source Settings", padding="10", style="Panel.TLabelframe")
         controls_frame.pack(side=tk.LEFT, fill=tk.Y, padx=5, anchor='n')
 
         self.sine_controls_frame = ttk.Frame(controls_frame)
@@ -103,11 +177,24 @@ class GUIApplication:
         self._toggle_source_controls()
         
         # --- Plotting Area ---
-        plot_frame = ttk.Frame(self.master, padding="10")
+        plot_frame = ttk.Frame(self.master, style="Main.TFrame", padding="10")
         plot_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        # Matplotlib figure with dark background to match the UI
         self.fig, (self.ax_time, self.ax_fft) = plt.subplots(2, 1, figsize=(8, 6), constrained_layout=True)
-        self.ax_time.set_title("Original Signal Sent to FPGA")
-        self.ax_fft.set_title("FFT Result Received from FPGA")
+        dark_bg = "#111827"
+        axis_bg = "#020617"
+        grid_color = "#4b5563"
+        label_color = "#e5e7eb"
+
+        self.fig.patch.set_facecolor(dark_bg)
+        self.ax_time.set_facecolor(axis_bg)
+        self.ax_fft.set_facecolor(axis_bg)
+        self.ax_time.set_title("Original Signal Sent to FPGA", color=label_color)
+        self.ax_fft.set_title("FFT Result Received from FPGA", color=label_color)
+        self.ax_time.tick_params(colors=label_color)
+        self.ax_fft.tick_params(colors=label_color)
+        self.ax_time.grid(True, linestyle='--', alpha=0.4, color=grid_color)
+        self.ax_fft.grid(True, linestyle='--', alpha=0.4, color=grid_color)
         self.canvas = FigureCanvasTkAgg(self.fig, master=plot_frame)
         self.canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
 
@@ -189,19 +276,21 @@ class GUIApplication:
     def update_plots(self, signal_data, fft_data, rate):
         chunk_size = len(signal_data)
         self.ax_time.clear()
-        self.ax_time.set_title("Original Signal Sent to FPGA")
-        self.ax_time.set_xlabel("Samples")
-        self.ax_time.set_ylabel("Amplitude")
+        self.ax_time.set_facecolor("#020617")
+        self.ax_time.set_title("Original Signal Sent to FPGA", color="#e5e7eb")
+        self.ax_time.set_xlabel("Samples", color="#e5e7eb")
+        self.ax_time.set_ylabel("Amplitude", color="#e5e7eb")
         self.ax_time.plot(signal_data, lw=1, color='royalblue')
-        self.ax_time.grid(True, linestyle='--', alpha=0.6)
+        self.ax_time.grid(True, linestyle='--', alpha=0.4, color="#4b5563")
         self.ax_fft.clear()
-        self.ax_fft.set_title("FFT Result Received from FPGA")
-        self.ax_fft.set_xlabel("Frequency (Hz)")
-        self.ax_fft.set_ylabel("Magnitude")
+        self.ax_fft.set_facecolor("#020617")
+        self.ax_fft.set_title("FFT Result Received from FPGA", color="#e5e7eb")
+        self.ax_fft.set_xlabel("Frequency (Hz)", color="#e5e7eb")
+        self.ax_fft.set_ylabel("Magnitude", color="#e5e7eb")
         freq_bins = np.fft.fftfreq(chunk_size, 1/rate)
         self.ax_fft.plot(freq_bins[:chunk_size//2], fft_data[:chunk_size//2], lw=1, color='darkorange')
         self.ax_fft.set_xlim(0, rate / 2)
-        self.ax_fft.grid(True, linestyle='--', alpha=0.6)
+        self.ax_fft.grid(True, linestyle='--', alpha=0.4, color="#4b5563")
         self.canvas.draw()
         
     def _on_closing(self):
